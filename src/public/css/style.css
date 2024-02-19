@@ -1,0 +1,218 @@
+:root {
+  --primary: #0f1735;
+  --secondary: gold;
+  --contrast: #237895;
+  --header: aliceblue;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--header);
+  background-color: var(--primary);
+  max-width: 1400px;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, rgb(172, 112, 218), gold, white, rgba(255, 255, 255, 0.651), rgba(255, 255, 255, 0.192), #0f1735) 1;
+  }
+
+#title {
+  font-size: 300%;
+  color: var(--header);
+}
+
+a {
+  text-decoration: none;
+  color: var(--header);
+}
+
+a:hover {
+  color: var(--header);
+}
+
+.btn-contrast {
+  background-color: var(--contrast);
+  color: var(--header);
+}
+
+.table {
+  color: var(--header);
+}
+
+.table thead {
+  background-color: var(--contrast);
+}
+
+.table tr:nth-child(even) {
+  background-color: rgba(137, 135, 135, 0.189);
+}
+
+h3 {
+  text-decoration: underline solid var(--secondary) 18%;
+  text-decoration-skip-ink: none;
+}
+
+h4 {
+  color: var(--secondary);
+}
+
+aside label {
+  background-color: var(--contrast);
+}
+
+.noto-color {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hammersmith-one-regular {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans-header {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 150%;
+}
+
+.dm-sans-body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 120%;
+}
+
+span {
+  color: var(--secondary);
+}
+.ui.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+.centered-form {
+  width: 450px;
+  margin: 0 auto;
+}
+.ui.form .field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.ui.form .field:last-child {
+  margin-bottom: 10px;
+}
+.ui.form .field label {
+  margin-right: 5px;
+  text-align: right;
+  flex: 0 0 75px;
+}
+.ui.form button {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.stateZip {
+  display: flex;
+}
+.zip {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.state {
+  width: 60%;
+}
+.userName {
+  font-size: 17px;
+}
+
+.search-result-item {
+  color: rgb(255, 255, 255); /* Change this color as needed */
+}
+
+#results-container {
+  background-color: var(--primary); /* Dark background for the container */
+  color: #ffffff; /* Light text color */
+  border-collapse: collapse; /* Collapse borders for table */
+  width: 100%; /* Full width table */
+  margin-top: 20px; /* Spacing above the table */
+}
+
+#results-container th {
+  background-color: var(--contrast); /* Slightly lighter background for headers */
+  color: #ffffff; /* Light text color for headers */
+  padding: 10px; /* Padding inside header cells */
+  text-align: left; /* Align text to the left */
+}
+
+#results-container td {
+  border-top: 1px solid #ffffff; /* White border for the top of each cell */
+  padding: 10px; /* Padding inside cells */
+  font-weight: 400;
+}
+
+#results-container tr:nth-child(even) {
+  background-color:  #d6d6d6; /* Zebra striping for rows */
+}
+
+
+@media (max-width: 600px) {
+  #title {
+    font-size: 250%;
+  }
+  .mobileSearchBar{
+    margin: 0px;
+  }
+  .mobileMain{
+    width: 100%;
+    margin: 0px;
+  }
+  .stateZip{
+    display: block;
+  }
+  .dm-sans-header {
+    font-size: 110%;
+    font-weight: 300;
+  }
+  .dm-sans-body {
+    font-size: 90%;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 400px) {
+  #title {
+    font-size: 220%;
+  }
+  .mobileLogin{
+    width: 100%;
+  }
+  .mobileCreate{
+    width:100%
+  }
+  .ui.container {
+    display: block;
+  } 
+  .stateZip{
+    display: block;
+  }
+  .noto-color{
+    font-size: 20px;
+  }
+  .mobileMain{
+    font-size: 18px;
+  }
+}
