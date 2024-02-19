@@ -57,6 +57,7 @@ A comprehensive web application designed to streamline the experience of managin
 
 ### Deployment
 - The application is deployed on Heroku, facilitating easy access and demonstration.
+- link to heroku app: https://ticket-wizard-pete-b1e8f95fed38.herokuapp.com/
 
 ## Installation
 
@@ -119,3 +120,8 @@ A: You can't. Don't forget your password.
 
 Special thanks to all the contributors and users who have made this project possible.
 - Katy and Jessica for their debugging expertise
+
+### Screenshot:
+![Screenshot 2024-02-19 at 1 12 19 PM](https://github.com/blomjonathon/project2/assets/126799836/79ca4f9c-67a2-4cad-80b8-db6f48ba1ccd)
+
+
